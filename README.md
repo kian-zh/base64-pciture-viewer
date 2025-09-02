@@ -22,6 +22,7 @@
 ## 技术栈
 
 - **React 18** - 现代化的前端框架
+- **Rsbuild** - 现代化构建工具，基于 Rspack，比 CRA 构建速度快 10 倍
 - **HTML5 File API** - 文件处理
 - **CSS3** - 现代样式和动画
 - **GitHub Actions** - 自动化部署
@@ -31,8 +32,8 @@
 
 ### 环境要求
 
-- Node.js 16.0+
-- npm 7.0+
+- Node.js 18.0+
+- npm 8.0+
 
 ### 安装依赖
 
@@ -56,6 +57,14 @@ npm run start:open
 
 ```bash
 npm run build
+```
+
+构建文件将生成在 `dist` 目录中。
+
+### 预览构建结果
+
+```bash
+npm run preview
 ```
 
 ## 部署到 GitHub Pages
