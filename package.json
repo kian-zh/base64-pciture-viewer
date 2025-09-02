@@ -16,11 +16,11 @@
     "@types/react-dom": "^18.2.0"
   },
   "scripts": {
-    "dev": "rsbuild dev --open false",
-    "start": "rsbuild dev --open false",
-    "start:open": "rsbuild dev",
-    "build": "rsbuild build",
-    "preview": "rsbuild preview",
+    "dev": "npx rsbuild dev --open false",
+    "start": "npx rsbuild dev --open false",
+    "start:open": "npx rsbuild dev",
+    "build": "npx rsbuild build",
+    "preview": "npx rsbuild preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
