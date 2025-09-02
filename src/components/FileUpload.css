@@ -1,0 +1,130 @@
+.file-upload {
+  margin-top: 20px;
+}
+
+.upload-divider {
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.upload-divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #dee2e6;
+  z-index: 1;
+}
+
+.upload-divider span {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 0 15px;
+  color: #6c757d;
+  font-size: 14px;
+  position: relative;
+  z-index: 2;
+}
+
+.upload-zone {
+  border: 2px dashed #dee2e6;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  background: #f8f9fa;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.upload-zone:hover,
+.upload-zone.drag-over {
+  border-color: #5D688A;
+  background: rgba(93, 104, 138, 0.05);
+  transform: translateY(-2px);
+}
+
+.upload-zone.drag-over {
+  border-style: solid;
+  background: rgba(93, 104, 138, 0.1);
+}
+
+.upload-content {
+  margin-bottom: 20px;
+}
+
+.upload-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  opacity: 0.6;
+}
+
+.upload-zone h3 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.upload-zone p {
+  color: #666;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.upload-zone small {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.upload-button {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.file-input {
+  display: none;
+}
+
+.upload-button .btn {
+  transition: all 0.2s ease;
+}
+
+.upload-button:hover .btn {
+  transform: translateY(-1px);
+}
+
+/* 拖拽状态动画 */
+.upload-zone.drag-over .upload-icon {
+  animation: bounce 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .upload-zone {
+    padding: 20px 15px;
+  }
+  
+  .upload-icon {
+    font-size: 2rem;
+  }
+  
+  .upload-zone h3 {
+    font-size: 1.1rem;
+  }
+  
+  .upload-zone p,
+  .upload-zone small {
+    font-size: 0.9rem;
+  }
+}

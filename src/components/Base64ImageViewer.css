@@ -1,0 +1,113 @@
+.base64-image-viewer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 100%;
+}
+
+.viewer-section,
+.preview-section {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.viewer-section h2,
+.preview-section h2 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.input-section {
+  margin-bottom: 20px;
+}
+
+.base64-input {
+  width: 100%;
+  min-height: 150px;
+  resize: vertical;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 13px;
+  line-height: 1.4;
+  background: #f8f9fa;
+  margin-bottom: 15px;
+}
+
+.input-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.error-message {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #f5c6cb;
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.empty-preview {
+  text-align: center;
+  padding: 60px 20px;
+  color: #666;
+}
+
+.empty-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  opacity: 0.6;
+}
+
+.empty-preview p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.empty-preview small {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+  .base64-image-viewer {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .viewer-section,
+  .preview-section {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .viewer-section h2,
+  .preview-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+  
+  .input-actions {
+    flex-direction: column;
+  }
+  
+  .input-actions .btn {
+    width: 100%;
+  }
+  
+  .base64-input {
+    min-height: 120px;
+    font-size: 12px;
+  }
+}

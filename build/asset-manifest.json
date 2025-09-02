@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/base64-picture-viewer/static/css/main.82993ab6.css",
+    "main.js": "/base64-picture-viewer/static/js/main.54eade0c.js",
+    "index.html": "/base64-picture-viewer/index.html",
+    "main.82993ab6.css.map": "/base64-picture-viewer/static/css/main.82993ab6.css.map",
+    "main.54eade0c.js.map": "/base64-picture-viewer/static/js/main.54eade0c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.82993ab6.css",
+    "static/js/main.54eade0c.js"
+  ]
+}
