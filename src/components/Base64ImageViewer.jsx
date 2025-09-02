@@ -1,8 +1,8 @@
 import React, { useState, useCallback } from 'react';
 import './Base64ImageViewer.css';
 import { validateBase64Image, getImageFormat } from '../utils/imageUtils';
-import ImagePreview from './ImagePreview';
-import FileUpload from './FileUpload';
+import ImagePreview from './ImagePreview.jsx';
+import FileUpload from './FileUpload.jsx';
 
 const Base64ImageViewer = () => {
   const [base64Input, setBase64Input] = useState('');

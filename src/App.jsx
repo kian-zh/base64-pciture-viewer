@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/App.css';
-import Base64ImageViewer from './components/Base64ImageViewer';
+import Base64ImageViewer from './components/Base64ImageViewer.jsx';
 
 function App() {
   return (
