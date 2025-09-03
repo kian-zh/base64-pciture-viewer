@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.NODE_ENV === 'production' ? '/base64-picture-viewer/' : '/',
+  base: '/base64-picture-viewer/',
   build: {
     outDir: 'dist',
   },
