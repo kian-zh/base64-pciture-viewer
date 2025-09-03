@@ -1,8 +1,172 @@
-.base64-image-viewer {
+/* 隐藏的辅助文本 */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* 应用头部 */
+.app-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #5D688A 0%, #7A8BA3 100%);
+  border-radius: 12px;
+  color: white;
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  margin: 0 0 16px 0;
+  font-weight: 700;
+}
+
+.app-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+  opacity: 0.95;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* 输入帮助文本 */
+.input-help {
+  margin-top: 8px;
+  color: #666;
+}
+
+/* 支持格式列表 */
+.supported-formats {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.supported-formats ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.supported-formats li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.supported-formats li:last-child {
+  border-bottom: none;
+}
+
+/* 功能特性区域 */
+.features-section {
+  margin-top: 60px;
+  padding: 40px 20px;
+  background: #f8f9fa;
+  border-radius: 16px;
+}
+
+.features-section h2 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.features-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
+}
+
+.feature-item {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.feature-item h3 {
+  color: #5D688A;
+  font-size: 1.3rem;
+  margin: 0 0 16px 0;
+  font-weight: 600;
+}
+
+.feature-item p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.base64-image-viewer {
   max-width: 100%;
+  padding: 0 20px;
+}
+
+/* 移动端布局 */
+@media (max-width: 767px) {
+  .base64-image-viewer {
+    display: block;
+    padding: 0 10px;
+  }
+  
+  .app-header {
+    padding: 30px 15px;
+    margin-bottom: 30px;
+  }
+  
+  .app-header h1 {
+    font-size: 2rem;
+  }
+  
+  .app-description {
+    font-size: 1rem;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .features-section {
+    margin-top: 40px;
+    padding: 30px 15px;
+  }
+  
+  .viewer-section,
+  .preview-section {
+    margin-bottom: 30px;
+  }
+}
+
+/* 桌面端布局 */
+@media (min-width: 768px) {
+  .base64-image-viewer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .viewer-section,
+  .preview-section {
+    margin-bottom: 0;
+  }
 }
 
 .viewer-section,

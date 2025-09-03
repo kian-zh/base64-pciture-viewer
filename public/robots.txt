@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://kian-zh.github.io/base64-picture-viewer/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
