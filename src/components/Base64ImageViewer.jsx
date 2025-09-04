@@ -83,13 +83,6 @@ const Base64ImageViewer = () => {
 
   return (
     <main className="base64-image-viewer" role="main">
-      <header className="app-header">
-        <h1>Base64 图片预览器</h1>
-        <p className="app-description">
-          免费在线工具，快速预览和转换 Base64 编码的图片。支持 PNG、JPG、SVG 等格式，
-          提供文件上传、全屏查看、下载等功能。
-        </p>
-      </header>
 
       <section className="viewer-section" aria-labelledby="input-heading">
         <h2 id="input-heading">输入 Base64 数据</h2>
@@ -165,27 +158,6 @@ const Base64ImageViewer = () => {
         )}
       </section>
 
-      <section className="features-section" aria-labelledby="features-heading">
-        <h2 id="features-heading">功能特性</h2>
-        <div className="features-grid">
-          <article className="feature-item">
-            <h3>快速预览</h3>
-            <p>实时解析 Base64 编码，即时显示图片预览效果</p>
-          </article>
-          <article className="feature-item">
-            <h3>文件上传</h3>
-            <p>支持拖拽上传图片文件，自动转换为 Base64 格式</p>
-          </article>
-          <article className="feature-item">
-            <h3>全屏查看</h3>
-            <p>支持全屏模式查看图片，获得更好的预览体验</p>
-          </article>
-          <article className="feature-item">
-            <h3>格式支持</h3>
-            <p>兼容 PNG、JPG、SVG 等主流图片格式</p>
-          </article>
-        </div>
-      </section>
     </main>
   );
 };
